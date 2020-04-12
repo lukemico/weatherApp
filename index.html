@@ -8,14 +8,22 @@
 		<link rel="stylesheet" href="./assets/style.css" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Abel"
-			rel="stylesheet"
+			rel="
+            stylesheet"
 		/>
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css"
+		/> -->
 	</head>
 	<body>
 		<div class="container">
 			<div class="weather-box">
+				<h1 class="headline">
+					Weather Forecast <span class="location"></span>
+				</h1>
 				<div class="row1">
-					<h2 class="weather-location"></h2>
+					<h2 class="location"></h2>
 					<canvas
 						class="weatherType"
 						id="icon1"
@@ -23,14 +31,30 @@
 						height="128"
 					></canvas>
 				</div>
+
 				<div class="row2">
 					<h1 class="temp"></h1>
 					<span class="temp-type">°C</span>
 				</div>
 				<h2 class="weather-description"></h2>
 				<p class="made-by">Made with FFC WEATHER API.</p>
+
+				<div class="row3">
+					<div class="search-weather eight columns offset-by-two">
+						<h2 class="find-forecast">Find a Forecast</h2>
+						<form id="my-form" action="">
+							<input
+								type="search"
+								placeholder="Search for location or keyword"
+								class="find-forcast"
+							/>
+							<button class="btn-search">Search</button>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
+
 		<script src="./assets/js/skycons.js"></script>
 		<script src="./assets/js/jquery-3.2.1.min.js"></script>
 		<script src="./assets/js/main.js"></script>
