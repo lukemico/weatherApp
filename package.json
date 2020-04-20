@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/lukemico/weatherApp/issues"
   },
-  "homepage": "https://github.com/lukemico/weatherApp#readme"
+  "homepage": "https://github.com/lukemico/weatherApp#readme",
+  "devDependencies": {
+    "jest": "^25.4.0"
+  }
 }
